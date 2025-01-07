@@ -1,0 +1,32 @@
+.listPage {
+  display: flex;
+  height: 100%;
+  .listContainer {
+    flex: 3;
+    height: 100%;
+    position: relative;
+
+    .loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .wrapper {
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      overflow-y: scroll;
+      height: 100%;
+      padding-bottom: 50px;
+      scrollbar-width: none;
+    }
+  }
+
+  .mapContainer {
+    flex: 2;
+    height: 100%;
+    padding-bottom: 50px;
+  }
+}

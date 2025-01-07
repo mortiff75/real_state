@@ -1,0 +1,102 @@
+@import "../../responsive.scss";
+
+.searchBar {
+  .type {
+    button {
+      padding: 16px 32px;
+      border: 1px solid #999;
+      background-color: white;
+      text-transform: capitalize;
+      cursor: pointer;
+      border-bottom: none;
+
+      &.active {
+        background-color: black;
+        color: white;
+      }
+
+      &:first-child {
+        border-top-left-radius: 5px;
+        border-right: none;
+
+        @include sm {
+          border-bottom: 1px solid #999;
+        }
+      }
+
+      &:last-child {
+        border-top-right-radius: 5px;
+        border-left: none;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    gap: 5px;
+    border: 1px solid #999;
+
+    @include sm {
+      flex-direction: column;
+      border: none;
+    }
+
+    input {
+      padding: 0 10px;
+      border: none;
+      width: 200px;
+
+      @include lg {
+        padding: 0 5px;
+        flex: 2;
+      }
+
+      @include md {
+        width: 200px;
+        &:nth-child(2),
+        &:nth-child(3) {
+          width: auto;
+        }
+      }
+
+      @include sm {
+        padding: 20px;
+        border: 1px solid #999;
+        width: auto;
+        &:nth-child(2),
+        &:nth-child(3) {
+          width: auto;
+        }
+
+        &:nth-child(3) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    a {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        border: none;
+        cursor: pointer;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        background-color: #fece51;
+        @include sm {
+          padding: 10px;
+        }
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
