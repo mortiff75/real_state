@@ -1,12 +1,13 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "index.js",
   "author": "morteza",
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "@prisma/client": "^6.1.0",

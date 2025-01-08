@@ -9,6 +9,8 @@ import userRouter from "./routes/user.route.js";
 import messageRouter from "./routes/message.router.js";
 import chatsRouter from "./routes/chats.router.js";
 
+const PORT = 4000;
+
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
@@ -25,6 +27,6 @@ app.use("/api/posts", postRouter);
 app.use("/api/chats", chatsRouter);
 app.use("/api/message", messageRouter);
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
   console.log("Server is running on port 4000");
 });
