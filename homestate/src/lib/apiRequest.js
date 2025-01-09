@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const apiRequest = axios.create({
-  baseURL: "http://localhost:4000/api/",
+  baseURL: "https://real-state-mw35.vercel.app/api/",
   withCredentials: true,
 });
