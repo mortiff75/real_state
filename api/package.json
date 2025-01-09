@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
     "dev": "nodemon index.js",
-    "build": "[my-framework] build --output public"
+    "postinstall": "prisma generate",
+     "build": "prisma generate && <actual-build-command>"
   },
   "dependencies": {
     "@prisma/client": "^6.1.0",
