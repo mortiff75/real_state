@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "*",
+    origin: "https://real-state-l1g9.vercel.app",
     credentials: true,
   })
 );
